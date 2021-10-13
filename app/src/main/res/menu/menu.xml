@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuLocation"
+        android:title="Location"
+        android:icon="@drawable/ic_edit_location"
+        app:showAsAction="always"/>
+    <item android:id="@+id/menuFeedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_feedback"
+        app:showAsAction="always"/>
+
+
+</menu>
