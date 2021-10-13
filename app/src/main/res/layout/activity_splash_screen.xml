@@ -4,53 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.SplashScreen"
-    android:background="@color/blue">
-
-    <ImageView
-        android:id="@+id/imgKedara"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:src="@drawable/kedara_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@color/colorBlue"
+    tools:context=".main.SplashScreenActivity">
 
     <TextView
-        android:id="@+id/txtKedara"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="KEDARA"
         android:fontFamily="@font/robotoslab"
-        android:textColor="@color/white"
-        android:textSize="36sp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        android:layout_marginTop="-45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgKedara" />
+        app:layout_constraintTop_toBottomOf="@+id/kedara" />
 
     <TextView
-        android:id="@+id/txtKedaraBy"
+        android:id="@+id/by"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:fontFamily="@font/robotoslab"
         android:text="by"
-        android:textColor="@color/white"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/macro_infinity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtKedara" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imgMarcroni"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/macroni"
-        android:layout_marginTop="16dp"
+        android:id="@+id/kedara"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtKedaraBy" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kedara_logo" />
+
+    <ImageView
+        android:id="@+id/macro_infinity"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/macroni" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
